@@ -1,22 +1,21 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import demo1 from '../views/demo1.vue'
+import demo2_1 from '../views/demo2-1.vue' // eslint-disable-line camelcase
 
 Vue.use(VueRouter)
 
 const routes = [
+  { path: '/', redirect: '/demo2-1' },
   {
-    path: '/',
-    name: 'home',
-    component: Home
+    path: '/demo1',
+    name: 'demo1',
+    component: demo1
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/demo2-1',
+    name: 'demo2_1',
+    component: demo2_1
   }
 ]
 

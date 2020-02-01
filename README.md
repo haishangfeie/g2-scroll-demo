@@ -3,22 +3,17 @@
 ## Project setup
 ```
 yarn install
+# 或者
+npm i
 ```
 
 ### Compiles and hot-reloads for development
 ```
 yarn serve
+# 或者
+npm run serve
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 说明
+`src/views/demo2-1.vue`是我推荐的g2图表滚动方案
+`src/views/demo1.vue`只是一个实现思路的简单实现，仅供参考
